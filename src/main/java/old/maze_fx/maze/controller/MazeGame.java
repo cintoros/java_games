@@ -1,14 +1,14 @@
 package old.maze_fx.maze.controller;
 
+import java.util.ArrayList;
 import old.maze_fx.Sounds.Sounds;
 import old.maze_fx.def.keybordListener.ArrowDirection;
 import old.maze_fx.def.keybordListener.KeyObserver;
-import old.maze_fx.def.queries.JOptionQueries;
 import old.maze_fx.maze.models.Field;
 import old.maze_fx.maze.models.FieldTyp;
 import old.maze_fx.maze.models.Maze;
 import old.maze_fx.maze.observer.AbstractSubject;
-import java.util.ArrayList;
+import shared.JOptionQueries;
 
 /**
  * the logic/rules of the game without calculation
@@ -17,7 +17,6 @@ import java.util.ArrayList;
  */
 public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
 
-    private final JOptionQueries qs;
     private final Sounds sound;//calls Object
     private final Maze m = new Maze();
     private final Field player;
@@ -33,7 +32,6 @@ public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
      */
     public MazeGame() {
         this.direction = ArrowDirection.Down;
-        this.qs = new JOptionQueries();
         this.player = new Field(0, 0, FieldTyp.PLAYER);
         sound = new Sounds();
         reset();
@@ -136,7 +134,7 @@ public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
             } else if (f.isFieldTyp(FieldTyp.GOAL)) {//if the player reches the goals
                 player.setPosition(x, y);
                 sound.win();
-                qs.showMessage("Game Over", "Game Over");
+                JOptionQueries.showMessage("Game Over", "Game Over");
             } else {// if the player hits an wall
                 sound.lose();
             }
@@ -154,7 +152,7 @@ public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
      * creates an new Maze an sets the Playerposition to default
      */
     public void newGame() {
-        int a[] = qs.askNewSizes(10, 100, "Minesweeper");
+        int a[] = JOptionQueries.askNewSizes(10, 100, "Minesweeper");
         m.newMaze(a[1], a[0]);
         notifyNewGame(a[1], a[0]);
         reset();
@@ -207,7 +205,8 @@ public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
     private Field[] toArray(ArrayList<Field> array) {
         Field f[] = new Field[array.size()];
         for (int i = 0; i < array.size(); i++) {
-            f[i] = array.get(i).clone();
+            f[i] = array.get(i)
+                    .clone();
         }
         return f;
     }
@@ -216,8 +215,8 @@ public class MazeGame extends AbstractSubject implements KeyObserver, Runnable {
      * tries to add the specific field to the array
      *
      * @param array the array
-     * @param x the x corrdinate of the field
-     * @param y the y corrdinate of the field
+     * @param x     the x corrdinate of the field
+     * @param y     the y corrdinate of the field
      */
     private void tryAdd(ArrayList<Field> array, int x, int y) {
         Field f = m.getField(x, y);

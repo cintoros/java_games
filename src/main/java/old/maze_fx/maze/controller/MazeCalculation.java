@@ -1,6 +1,6 @@
 package old.maze_fx.maze.controller;
 
-import old.maze_fx.def.gameLogic.ArrayCopy;
+import shared.ArrayUtil;
 import old.maze_fx.maze.models.Direction;
 import java.awt.Point;
 import java.util.Random;
@@ -34,17 +34,17 @@ public class MazeCalculation {
         boolean[][] maze = new boolean[lenght][height];
         this.lenght = lenght;
         this.height = height;
-        maze = startPosition(ArrayCopy.clone2DArrayBoolean(maze), new Point());
+        maze = startPosition(ArrayUtil.deepCopyBooleanMatrix(maze), new Point());
         int fsNum = lenght * height / 2;
         for (int count = 0; !enoughVariants(maze) || !maze[lenght - 1][height - 1]; count++) {
             Point p = getStartPoint(maze);
-            maze = startPosition(ArrayCopy.clone2DArrayBoolean(maze), p);
+            maze = startPosition(ArrayUtil.deepCopyBooleanMatrix(maze), p);
             if (count > fsNum) {//if it is calculating to long stop it.
                 addEndError(maze);
                 break;
             }
         }
-        return ArrayCopy.clone2DArrayBoolean(maze);
+        return ArrayUtil.deepCopyBooleanMatrix(maze);
     }
 
     /**
@@ -60,7 +60,7 @@ public class MazeCalculation {
             mazeWands[startx][starty] = true;
             starty--;
         }
-        return ArrayCopy.clone2DArrayBoolean(mazeWands);
+        return ArrayUtil.deepCopyBooleanMatrix(mazeWands);
     }
 
     /**
@@ -95,7 +95,7 @@ public class MazeCalculation {
                 mazeWands[indexPoint.x][indexPoint.y] = true;
             }
         }
-        return ArrayCopy.clone2DArrayBoolean(mazeWands);
+        return ArrayUtil.deepCopyBooleanMatrix(mazeWands);
     }
 
     private Direction toDir(int i) {
