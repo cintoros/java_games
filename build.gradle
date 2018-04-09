@@ -1,0 +1,40 @@
+group 'java_games'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 10
+targetCompatibility = 10
+
+tasks.withType(JavaCompile) {
+    options.with {
+        encoding = 'UTF-8'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task oldMazeFx(type: JavaExec) {
+    main = "old.maze_fx.start.Starter"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task oldGameFx(type: JavaExec) {
+    main = "old.games_fx.Games.Starter"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task oldGameSwing(type: JavaExec) {
+    main = "old.games_swing.GameLogic.Starter"
+    classpath = sourceSets.main.runtimeClasspath
+}

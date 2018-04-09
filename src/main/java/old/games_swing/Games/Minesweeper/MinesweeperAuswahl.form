@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="name" type="java.lang.String" value="MinesweeperAuswahl" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblLänge" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHöhe" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBombe" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="bombSlider" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblBombenAusgabe" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lenghtSlider" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblLängeAusgabe" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="heightSlider" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblHöhenAusgabe" min="-2" pref="18" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="cmdNew" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblBeschreibung" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblLänge" min="-2" max="-2" attributes="0"/>
+                  <Component id="lenghtSlider" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblLängeAusgabe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblHöhe" min="-2" max="-2" attributes="0"/>
+                  <Component id="heightSlider" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHöhenAusgabe" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblBombe" min="-2" max="-2" attributes="0"/>
+                  <Component id="bombSlider" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblBombenAusgabe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="cmdNew" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblBeschreibung" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="67" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblL&#xe4;nge">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="L&#xe4;nge"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblH&#xf6;he">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="H&#xf6;he"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblBombe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bomben"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblBeschreibung">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;  &lt;p&gt;Ziel des Spieles ist; alle Felder ohne Bomben aufzudecken. &lt;/p&gt;  &lt;p&gt;Die Boben-Felder d&#xfc;rfen dabei nicht gedr&#xfc;ckt  werden oder das Spiel ist verloren. &lt;/p&gt;  &lt;p&gt;Falls das Spiel verloren oder gewonnen ist kann man entweder;&lt;/p&gt;  &lt;p&gt;per Reset die Kacheln wieder verdecken oder &lt;/p&gt;  &lt;p&gt;mit Neu ein neues Spielfeld berechnen lassen.&lt;/p&gt;"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSlider" name="lenghtSlider">
+      <Properties>
+        <Property name="maximum" type="int" value="30"/>
+        <Property name="minimum" type="int" value="5"/>
+        <Property name="paintTicks" type="boolean" value="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="L&#xe4;ngenChange"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblL&#xe4;ngeAusgabe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblH&#xf6;henAusgabe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblBombenAusgabe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="150"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="cmdNew">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Neu"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdNewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSlider" name="heightSlider">
+      <Properties>
+        <Property name="maximum" type="int" value="30"/>
+        <Property name="minimum" type="int" value="5"/>
+        <Property name="paintTicks" type="boolean" value="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="changedHeight"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSlider" name="bombSlider">
+      <Properties>
+        <Property name="maximum" type="int" value="150"/>
+        <Property name="minimum" type="int" value="5"/>
+        <Property name="paintTicks" type="boolean" value="true"/>
+        <Property name="value" type="int" value="150"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="changedBombs"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

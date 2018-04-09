@@ -1,0 +1,53 @@
+/* 
+    Created on : 11.10.2014, 13:36:40
+    Author     : Elias Schorr, BBBaden
+*/
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover{
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+#NONE{
+    
+    -fx-background-color: white;
+}
+#NOBOMB{
+    -fx-background-color: green;
+}
+#FLAG{
+    -fx-background-color: violet;
+}
+#BOMB{
+    -fx-background-color: #e20005;
+}
+#ONE{
+    -fx-background-color: #ddf936;
+}
+#TWO{
+    -fx-background-color: #ddc818;
+}
+#THREE{
+    -fx-background-color: #ff790f;
+}
+#FOUR{
+    -fx-background-color: #ff6000;
+}
+#FIVE{
+    -fx-background-color: #ff4a14;
+}
+#SIX{
+    -fx-background-color: #ff2f02;
+}
+#SEVEN{
+    -fx-background-color: #ff1b12;
+}
+#EIGHT{
+    -fx-background-color: #ff1b12;
+}

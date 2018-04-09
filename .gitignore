@@ -1,0 +1,13 @@
+.gradle
+#ignore all /build folders
+**/build/
+.idea/
+*.iml
+**/log/
+.project
+.settings/
+*.classpath
+out
+**/classes/**
+
+.DS_Store
