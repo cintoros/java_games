@@ -1,0 +1,29 @@
+#HIDDEN {
+    -fx-background-color: #cccccc;
+    -fx-fill: #999999;
+}
+
+#WALL {
+    -fx-background-color: #333333;
+    -fx-fill: #333333;
+}
+
+#WAY {
+    -fx-background-color: white;
+    -fx-fill: transparent;
+}
+
+#GOAL {
+    -fx-background-color: yellow;
+    -fx-fill: yellow;
+}
+
+#PLAYER {
+    -fx-background-color: blue;
+    -fx-fill: blue;
+}
+
+#START {
+    -fx-background-color: red;
+    -fx-fill: red;
+}
